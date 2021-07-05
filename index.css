@@ -14,7 +14,6 @@ body {
     background-color: #FDEA5E;
     position: fixed;
     display: flex;
-    position: 0%;
     justify-content: flex-end;
     height: 50px;
     width: 100%
@@ -23,14 +22,16 @@ body {
 #navbar a {
     border: 1px solid #F2F2E8;
     width: 85px;
-    border-radius: 70%;
     text-transform: uppercase; 
     text-align: center;
     font-size: 0.78em;
     background: #F2F2E8;
-    margin: 9px 6px;
+    margin: 8px 6px 9px;
     padding: 8px 10px;
-    transition: color 2s;
+    box-shadow: 4px 4px 4.5px #00000029;
+    border-radius: 13px;
+    text-decoration: none;
+    color: #010101;
 }
 
 #navbar a:first-child {
@@ -41,9 +42,10 @@ body {
     width: 60px;
 }
 
-#navbar a:hover {          /*hover no funka*/
+#navbar a:hover {        
     color: #3B3B3B;
     background-color: #8FE0B5;
+    transition: 0.7s;
 }
 
 #welcome-section {
@@ -97,6 +99,8 @@ body {
     padding: 30px;
     margin: 20px;
     text-align: center;
+    box-shadow: 8px 8px 9px #00000029;
+    border-radius: 13px;
 }
 
 footer {
@@ -110,4 +114,37 @@ footer {
 footer div {
     margin: 5px;
     padding: 20px;
+}
+
+#nb {
+    padding: 0px 180px;
+    margin: 0;
+}
+
+#nb p:first-child {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 120px 0px 10px 590px;
+    color: #3B3B3B;
+    letter-spacing: 0.12rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+#nb p:nth-child(2) {
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 15px 15px 15px 300px;
+    color: #3B3B3B;
+    text-align: end;
+    line-height: 1.3rem;
+}
+
+#nb div div img{
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
 }
