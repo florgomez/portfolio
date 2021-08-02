@@ -120,24 +120,22 @@ body {
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 300px;
+    align-content: center;
     background-color: #FDEA5E;
+    padding: 5rem;
+    box-sizing: border-box;
 }
 
-footer div {
-    margin: 5px;
-    padding: 20px;
-    width: 100px;
+footer article {
+    flex-basis: 8%;
+    box-sizing: border-box;
+    margin: 0rem 1rem;
+    text-align: center; /* el texto sera intercambiado por iconos y esto desaparece */
 }
 
-.imagenes-footer {
-    width: 100%;
-}
-
-footer div:nth-child(3):hover {
+/*footer article:nth-child(3):hover {
     transform: scale(1.5)
-}
+}*/
 
 #nb {
     padding: 0px 180px;
