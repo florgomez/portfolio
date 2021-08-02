@@ -1,18 +1,21 @@
-body {
-    background-color: #F2F2E8;
-    font-family: Helvetica, sans-serif;
-    font-size: 17px;
+* {
+    font-size: 10px;
     margin: 0;
     padding: 0;
     border: 0;
     color: #010101;
+    font-family: Helvetica, sans-serif;
     width: 100%;
-    box-sizing: border-box;
 }
 
-*::selection {
+/**::selection { nose pa que puse esto si no anda
     background-color: #99a0fa;
     color: #000;
+}*/
+
+body {
+    background-color: #F2F2E8;
+    box-sizing: border-box;
 }
 
 #navbar {
@@ -21,14 +24,15 @@ body {
     display: flex;
     justify-content: flex-end;
     height: 50px;
-    width: 100%;
     z-index: 2;
+    font-size: 1.7rem;
 }
 
 #navbar a {
     border: 1px solid #F2F2E8;
-    width: 85px;
+    flex-basis: 4%;
     text-transform: uppercase; 
+    text-decoration: none;
     text-align: center;
     font-size: 0.78em;
     background: #F2F2E8;
@@ -36,16 +40,7 @@ body {
     padding: 8px 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
     border-radius: 13px;
-    text-decoration: none;
     color: #010101;
-}
-
-#navbar a:first-child {
-    width: 46px;
-}
-
-#navbar a:nth-child(3) {
-    width: 60px;
 }
 
 #navbar a:hover {        
@@ -103,17 +98,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: center;
+    margin: 50px 0px 33px 0px; /*cuando se agreguen mas filas manejar margenes por separado de cada child*/
 }
 
-#projects .container:first-child {
-    margin: 50px 0px 33px 0px;
-}
-
-#projects .container:nth-child(2) {
-    margin: 10px 0px 50px 0px;
-}
-
-#projects .container div {
+#projects .container article {
     background-color: #F2F2E8;
     width: 330px;
     height: 330px;
