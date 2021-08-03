@@ -39,6 +39,7 @@ body {
     padding: 0.8rem 1rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0rem 0.1rem 0.2rem 0rem, rgba(60, 64, 67, 0.15) 0rem 0.2rem 0.6rem 0.2rem;    
     border-radius: 1.3rem;
+    transition: 0.8s;
 }
 
 #navbar a:hover {        
@@ -95,17 +96,25 @@ body {
     box-shadow: rgba(0, 0, 0, 0.3) 0rem 1.9rem 3.3rem, rgba(0, 0, 0, 0.22) 0rem 1.5rem 1.2rem;
     border-radius: 1.3rem;
     z-index: 1;
+    transition: 0.8s;
+}
+
+#projects .container article:first-child {
+    padding: 7rem 1rem;
 }
 
 .imagenes {
     border-radius: 1.3rem;
     opacity: 40%;
-    transition: 0.8s;
+}
+
+#projects .container article:hover {
+    transform: scale(1.1);
 }
 
 .imagenes:hover {
     opacity: 100%;
-    transform: scale(1.1);
+    transition: 0.8s;
 }
 
 footer {
@@ -121,6 +130,7 @@ footer article {
     box-sizing: border-box;
     padding: 0% 3%;
     opacity: 60%;
+    transition: 0.8s;
 }
 
 footer article:hover {
