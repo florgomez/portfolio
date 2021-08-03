@@ -48,18 +48,9 @@ body {
 }
 
 #welcome-section {
-    padding-top: 20rem;
-    padding-bottom: 18rem;
+    padding: 20rem 30rem 18rem 20rem;
     box-sizing: border-box;
     display: flex;
-}
-
-#welcome-section article:first-child {
-    flex: 1;
-}
-
-#welcome-section article:last-child {
-    flex: 6.5;
 }
 
 #welcome-section article h1 {
@@ -118,54 +109,52 @@ body {
 }
 
 footer {
+    height: 25rem;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #FDEA5E;
-    padding: 5rem;
-    box-sizing: border-box;
 }
 
 footer article {
-    flex-basis: 8%;
+    flex-basis: 11%;
     box-sizing: border-box;
-    margin: 0rem 1rem;
-    text-align: center; /* el texto sera intercambiado por iconos y esto desaparece */
+    padding: 0% 3%;
+    opacity: 60%;
 }
 
-/*footer article:nth-child(3):hover {
-    transform: scale(1.5)
-}*/
+footer article:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+    opacity: 100%;
+}
 
 #nb {
-    padding: 0px 180px;
-    margin: 0;
+    padding: 0% 16%;
+    text-align: end;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-#nb p:first-child {
+#nb article {
+    padding: 20% 0% 1% 20%;
     box-sizing: border-box;
-    margin: 0;
-    padding: 120px 0px 10px 590px;
+}
+
+#nb h1 {
     color: #3B3B3B;
     letter-spacing: 0.12rem;
     font-size: 2.8rem;
     font-weight: bold;
+    line-height: 4.5rem;
 }
 
-#nb p:nth-child(2) {
-    font-size: 1.1rem;
+#nb p {
+    font-size: 1.2rem;
     letter-spacing: 0.07rem;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 15px 15px 15px 300px;
     color: #3B3B3B;
-    text-align: end;
-    line-height: 1.3rem;
-}
-
-#nb div div img{
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    margin: auto;
+    line-height: 1.5rem;
 }
