@@ -181,8 +181,7 @@ footer article:hover {
 }
 
 #principal {
-    padding: 0% 16%;
-    text-align: end;
+    padding: 0% 9%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -191,8 +190,9 @@ footer article:hover {
 }
 
 #principal article {
-    padding: 20% 0% 1% 20%;
+    padding: 20% 2% 1% 2%;
     box-sizing: border-box;
+    text-align: center;
 }
 
 #principal h1 {
@@ -200,13 +200,15 @@ footer article:hover {
     letter-spacing: 0.12rem;
     font-size: 2.8rem;
     font-weight: bold;
-    line-height: 4.5rem;
+    line-height: 3rem;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
 }
 
 #principal p, #principal p a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.07rem;
-    color: #3B3B3B;
+    color: #595959;
     line-height: 1.5rem;
 }
 
@@ -218,4 +220,23 @@ footer article:hover {
 #principal img {
     padding-bottom: 2rem;
     box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+    #principal {
+        padding: 0% 16%; 
+    }
+    #principal article {
+        padding: 20% 0% 1% 20%;
+        text-align: end;
+    }
+    #principal h1 {
+        font-size: 3.8rem;
+        line-height: 4.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #principal p, #principal p a {
+        font-size: 1.2rem;
+        color: #3B3B3B;
+    }
 }
