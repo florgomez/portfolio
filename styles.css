@@ -107,7 +107,6 @@ body {
     border-radius: 1.3rem;
     z-index: 1;
     transition: 0.8s;
-    margin: auto;
     margin: 4rem 0rem; /* para que se separen entre si en pantalla chica*/
     display: flex;
     align-items: center;
@@ -156,7 +155,7 @@ footer {
 }
 
 footer article {
-    flex-basis: 11%;
+    flex-basis: 16%;
     box-sizing: border-box;
     padding: 0% 3%;
     opacity: 60%;
@@ -167,6 +166,18 @@ footer article:hover {
     transform: scale(1.1);
     transition: 0.8s;
     opacity: 100%;
+}
+
+@media (min-width: 600px) {
+    footer article {
+        flex-basis: 13%;
+    }
+}
+
+@media (min-width: 900px) {
+    footer article {
+        flex-basis: 11%;
+    }
 }
 
 #principal {
