@@ -49,7 +49,7 @@ body {
 }
 
 #welcome-section {
-    padding: 20rem 30rem 18rem 20rem;
+    padding: 15rem 3rem 13rem 7rem;
     box-sizing: border-box;
     display: flex;
 }
@@ -65,12 +65,27 @@ body {
     color: #3B3B3B;
     letter-spacing: 0.12rem;
     font-size: 1.65rem;
-    line-height: 3rem;
+    line-height: 2rem;
 }
 
 #welcome-section article p {
     color: #3B3B3B;
     font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    #welcome-section {
+        padding: 15rem 15rem 13rem 10rem;
+    }
+}
+
+@media (min-width: 900px) {
+    #welcome-section {
+        padding: 20rem 30rem 18rem 20rem;
+    }
+    #welcome-section article h2 {
+        line-height: 3rem;
+    }
 }
 
 #projects {
