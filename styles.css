@@ -72,36 +72,51 @@ body {
     color: #3B3B3B;
     font-size: 1.5rem;
 }
-/* debe tener una media query -----
- La altura de la sección de bienvenida debe ser igual a la altura del viewport. */
 
 #projects {
     background-color: #8FE0B5;
-    display: flex;
-    flex-direction: column; /* va a aplicarse cuando se agregue otra fila de proyectos*/
-    padding: 6rem 2rem;
+    padding: 4rem 5rem;
     box-sizing: border-box;
 }
 
 #projects .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 #projects .container article {
     background-color: #F2F2E8;
     flex-basis: 27%;
     box-sizing: border-box;
-    text-align: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0rem 1.9rem 3.3rem, rgba(0, 0, 0, 0.22) 0rem 1.5rem 1.2rem;
     border-radius: 1.3rem;
     z-index: 1;
     transition: 0.8s;
+    margin: auto;
+    margin: 4rem 0rem; /* para que se separen entre si en pantalla chica*/
+    display: flex;
+    align-items: center;
 }
 
-#projects .container article:first-child {
-    padding: 7rem 1rem;
-}
+@media (min-width: 700px) {
+    #projects {
+        display: flex;
+        flex-direction: column; /* va a aplicarse cuando se agregue otra fila de proyectos*/
+        padding: 5rem 2rem;
+    }
+    #projects .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #projects .container article {
+        padding: 0;
+        margin: 0;
+    }  
+    #projects figure {
+        padding: 0rem 1rem;
+        box-sizing: border-box;
+    }
+}   
 
 .imagenes {
     border-radius: 1.3rem;
