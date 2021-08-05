@@ -241,3 +241,15 @@ footer article:hover {
         color: #3B3B3B;
     }
 }
+
+#welcome-section .contacto {
+    padding: 0;
+}
+
+.contacto {
+    text-align: center;
+}
+
+.contacto h1 {
+    padding-bottom: 2rem;
+}
