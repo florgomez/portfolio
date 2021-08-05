@@ -135,6 +135,7 @@ body {
 .imagenes {
     border-radius: 1.3rem;
     opacity: 40%;
+    transition: 0.8s;
 }
 
 #projects .container article:hover {
