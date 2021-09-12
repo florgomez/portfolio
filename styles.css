@@ -73,21 +73,6 @@ body {
     font-size: 1.5rem;
 }
 
-@media (min-width: 600px) {
-    #welcome-section {
-        padding: 15rem 15rem 13rem 10rem;
-    }
-}
-
-@media (min-width: 900px) {
-    #welcome-section {
-        padding: 20rem 30rem 18rem 20rem;
-    }
-    #welcome-section article h2 {
-        line-height: 3rem;
-    }
-}
-
 #projects {
     background-color: #8FE0B5;
     padding: 4rem 5rem;
@@ -111,26 +96,6 @@ body {
     display: flex;
     align-items: center;
 }
-
-@media (min-width: 700px) {
-    #projects {
-        display: flex;
-        flex-direction: column; /* va a aplicarse cuando se agregue otra fila de proyectos*/
-        padding: 5rem 2rem;
-    }
-    #projects .container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #projects .container article {
-        padding: 0;
-        margin: 0;
-    }  
-    #projects figure {
-        padding: 0rem 1rem;
-        box-sizing: border-box;
-    }
-}   
 
 .imagenes {
     border-radius: 1.3rem;
@@ -167,18 +132,6 @@ footer article:hover {
     transform: scale(1.1);
     transition: 0.8s;
     opacity: 100%;
-}
-
-@media (min-width: 600px) {
-    footer article {
-        flex-basis: 13%;
-    }
-}
-
-@media (min-width: 900px) {
-    footer article {
-        flex-basis: 11%;
-    }
 }
 
 #principal {
@@ -223,7 +176,62 @@ footer article:hover {
     box-sizing: border-box;
 }
 
+section#welcome-section.contacto {
+    padding: 0;
+    box-sizing: border-box;
+    height: 386px;
+    display: flex;
+}
+
+section#welcome-section.contacto article {
+    margin: auto;
+    text-align: center;
+}
+
+section#welcome-section.contacto article p {
+    font-size: 1.6rem;
+}
+
+.contacto h1 {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+    #welcome-section {
+        padding: 15rem 15rem 13rem 10rem;
+    }
+    footer article {
+        flex-basis: 13%;
+    }
+}
+
+@media (min-width: 700px) {
+    #projects {
+        display: flex;
+        flex-direction: column; /* va a aplicarse cuando se agregue otra fila de proyectos*/
+        padding: 5rem 2rem;
+    }
+    #projects .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #projects .container article {
+        padding: 0;
+        margin: 0;
+    }  
+    #projects figure {
+        padding: 0rem 1rem;
+        box-sizing: border-box;
+    }
+}   
+
 @media (min-width: 900px) {
+    #welcome-section {
+        padding: 20rem 30rem 18rem 20rem;
+    }
+    #welcome-section article h2 {
+        line-height: 3rem;
+    }
     #principal {
         padding: 0% 16%; 
     }
@@ -240,16 +248,7 @@ footer article:hover {
         font-size: 1.2rem;
         color: #3B3B3B;
     }
-}
-
-#welcome-section .contacto {
-    padding: 0;
-}
-
-.contacto {
-    text-align: center;
-}
-
-.contacto h1 {
-    padding-bottom: 2rem;
+    footer article {
+        flex-basis: 11%;
+    }
 }
